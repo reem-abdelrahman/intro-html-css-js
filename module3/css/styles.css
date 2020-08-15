@@ -8,11 +8,19 @@ body {
 }
 .navbar{
   background-color: darkred;
-  font: white;
 }
-.navbar-collapse, .navbar-toggler{
+ a.navbar-brand   {
+  color: white;
+}
+.navbar-toggler {
   background-color: white;
+  color: black;
 }
+a.nav-item {
+  color: black;
+}
+
+
 .navbar-toggler-icon {
   color: yellow;
 }
