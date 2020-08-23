@@ -6,24 +6,49 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.navbar{
-  background-color: darkred;
+
+header {
+
+  overflow-x: hidden;
 }
- a.navbar-brand   {
-  color: white;
+#header-nav {
+background-color: darkred;
+
+border: 0;
+border-radius: 0;
+padding-left: 10px;
 }
-.navbar-toggler {
-  background-color: white;
-  color: black;
-}
-a.nav-item {
-  color: black;
+.container-fluid {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-
-.navbar-toggler-icon {
-  color: yellow;
+.container-fluid > .navbar-header > .navbar-brand {
+  font-size: 35px;
+  color: black;
+  padding-top: 15px;
 }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid black;
+}
+#nav-list a {
+  font-size: 20px;
+  color: Yellow;
+}
+#nav-list a:hover {
+  font-size: 20px;
+  color: black;
+}
+ .navbar-toggle {
+  background-color: yellow;
+  color: black;
+}
+.navbar-toggle:hover {
+ background-color: white;
+ color: black;
+}
+
 h1 {
   margin: 50px;
   font-size: 175%;
@@ -33,7 +58,6 @@ h1 {
   margin-left: 35px;
 }
 p {
- clear: both;
 /*reset page layout */
  padding-right: 10px; padding-left: 10px;
  font-size: 18px;
@@ -43,71 +67,56 @@ h2 {
   font-size: 125%;
 }
 
-.box1, .box2, .box3 {
+#border {
   border: black 1px solid;
   background-color: #EEEEEE;
 }
 
 .box1 > div {
-  background-color: #f1c5c5;
-  float: right;
-  border: black 1px solid;
-  width: 150px;
-  text-align: center;
+
   font-size: 20px;
   margin-bottom: 10px;
 }
 .box2 > div {
-  background-color: #faf0af;
-  float: right;
-  border: black 1px solid;
-  width: 150px;
-  text-align: center;
+
   font-size: 20px;
   margin-bottom: 10px;
 }
 .box3 > div {
-  background-color: #8bcdcd;
-  float: right;
-  border: black 1px solid;
-  width: 150px;
-  text-align: center;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* desktop layout*/
+/* desktop layout
+
 @media (min-width: 992px) {
   .box1, .box2, .box3 {
     width: 30%;
     float: left;
-    margin: 10px;
+    margin: 5px;
     }
     .boxes {
-      margin-left: 35px;
+
     }
 }
 
 
 /* tablet layout */
 @media (min-width: 768px) and (max-width:991px) {
-  .box1, .box2 {
-    width: 45%;
-    float: left;
+boxes .box1, .box2 {
+
+
     }
-  .box3 {
-    clear: both;
-     margin-right: auto;
+boxes .box3 {
+
   }
- .box1, .box2, .box3 {
-    margin: 20px;
+ boxes .box1, boxes .box2, boxes .box3 {
+
   }
-  .boxes {
-    width: 100%;
-  }
+
 }
 
-/*mobile layout */
+/*mobile layout
 @media (max-width:767px) {
   .box1, .box2, .box3 {
     float: none;
